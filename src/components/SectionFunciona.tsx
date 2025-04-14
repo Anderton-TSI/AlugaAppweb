@@ -46,7 +46,7 @@ export function SectionFunciona() {
                 start: '10% center',
                 end: '',
 
-                markers: true
+                markers: false
 
             }
 
@@ -67,7 +67,7 @@ export function SectionFunciona() {
                 start: '10% center',
                 end: '',
 
-                markers: true
+                markers: false
 
             }
 
@@ -88,7 +88,7 @@ export function SectionFunciona() {
                 start: '30% center',
                 end: '',
 
-                markers: true
+                markers: false
 
             }
 
@@ -109,7 +109,7 @@ export function SectionFunciona() {
                 start: '30% center',
                 end: '',
 
-                markers: true
+                markers: false
 
             }
 
@@ -130,7 +130,7 @@ export function SectionFunciona() {
                 start: '50% center',
                 end: '',
 
-                markers: true
+                markers: false
 
             }
 
@@ -151,7 +151,7 @@ export function SectionFunciona() {
                 start: '50% center',
                 end: '',
 
-                markers: true
+                markers: false
 
             }
 

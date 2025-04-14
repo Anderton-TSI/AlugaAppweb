@@ -33,7 +33,7 @@ export function SectionSobre() {
                 start: '13% center',
                 end:'',
 
-                markers:true
+                markers:false
             }    
         })
 
@@ -50,7 +50,7 @@ export function SectionSobre() {
                 trigger:sectionsobre,
                 start:'20%',
                 end:'30%',
-                markers: true
+                markers: false
             }
 
         })

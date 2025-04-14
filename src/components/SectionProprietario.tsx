@@ -41,7 +41,7 @@ export function SectionProprietario() {
                 start:'13% center',
                 end:'',
 
-                markers:true
+                markers:false
             }
 
         })
@@ -60,7 +60,7 @@ export function SectionProprietario() {
                 start:'50% center',
                 end:'',
 
-                markers:true
+                markers:false
             }
 
         })
@@ -79,7 +79,7 @@ export function SectionProprietario() {
                 start:'60% center',
                 end:'',
 
-                markers:true
+                markers:false
             }
 
         })
@@ -98,7 +98,7 @@ export function SectionProprietario() {
                 start:'13% center',
                 end:'',
 
-                markers:true
+                markers:false
             }
 
         })
@@ -117,7 +117,7 @@ export function SectionProprietario() {
                 start:'13% center',
                 end:'',
 
-                markers:true
+                markers:false
             }
 
         })
@@ -136,7 +136,7 @@ export function SectionProprietario() {
                 start:'60% center',
                 end:'',
 
-                markers:true
+                markers:false
             }
 
         })
