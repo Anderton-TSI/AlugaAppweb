@@ -16,17 +16,18 @@ import { useRef } from "react";
 
 export function Header() {
 
-    const menuref = useRef(null);
+    const menuref = useRef<HTMLDivElement>(null);
     const btnref = useRef(null);
+    const [menuAberto, setMenuAberto] = useState(false);
 
-    function AbrirMenu(){
-        const menu = menuref.current
-
-        menu.classList.toggle("hidden")
-        
-
-    }
+    function AbrirMenu() {
+        const menu = menuref.current;
     
+        if (menu) {
+            menu.classList.toggle("hidden");
+            setMenuAberto(prev => !prev); // alterna entre true e false
+        }
+    }
 
     return (
 
@@ -35,7 +36,7 @@ export function Header() {
                 <div className="flex flex-row items-center justify-between gap-20">
                     <Image src={Logo} alt="logo" />
                     <button ref={btnref} className="flex text-2xl text-[#830698] cursor-pointer md:hidden" onClick={AbrirMenu}>
-                        <FaBars />
+                        {menuAberto ? <FaXmark /> : <FaBars />}
                     </button>
                 </div>
 
