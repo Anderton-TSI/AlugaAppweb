@@ -161,37 +161,39 @@ export function SectionFunciona() {
     },[])
 
     return (
-        <section className="w-full h-[1000px] bg-[#E1D0E4]" ref={sectioncfref} id="CF">
+        <section className="bg-[#E1D0E4]" ref={sectioncfref} id="CF">
 
             <Container>
-                <div className="flex justify-center">
-                    <h1 className="text-xl font-bold mt-10">Como funciona</h1>
-                </div>
-                <div className="flex items-center justify-center gap-20">
-                    <div className="flex flex-col items-center w-[500px] gap-5" ref={conteudo1ref}>
-                        <h2 className="font-semibold text-2xl">Cadastre seu imóvel</h2>
-                        <p className="text-m font-light">Crie uma conta no app e adicione fotos, descrição e valor do aluguel para atrair inquilinos.</p>
+                <div className="flex flex-col gap-5 md:p-10">
+                    <div className="flex justify-center">
+                        <h1 className="font-bold md:text-3xl">Como funciona</h1>
                     </div>
-                    <div className="w-[300px] h-[300px]" ref={img1ref}>
-                        <Image src={imgCadastro} alt="Imagem de cadastro" />
+                    <div className="flex justify center items-center gap-5">
+                        <div className="flex flex-col gap-4 md:text-center" ref={conteudo1ref}>
+                            <h2 className="text-sm font-bold md:text-2xl">Cadastre seu imóvel</h2>
+                            <p className="text-sm font-light md:text-lg">Crie uma conta no app e adicione fotos, descrição e valor do aluguel para atrair inquilinos.</p>
+                        </div>
+                        <div className="" ref={img1ref}>
+                            <Image src={imgCadastro} alt="Imagem de cadastro" />
+                        </div>
                     </div>
-                </div>
-                <div className="flex items-center justify-center gap-20">
-                    <div className="w-[300px] h-[300px]" ref={img2ref}>
-                        <Image src={imgPropostas} alt="Imagem de notificações" />
+                    <div className="flex justify center items-center gap-5">
+                        <div className="" ref={img2ref}>
+                            <Image src={imgPropostas} alt="Imagem de notificações" />
+                        </div>
+                        <div className="flex flex-col gap-4 md:text-center" ref={conteudo2ref}>
+                            <h2 className="text-sm font-bold md:text-2xl">Receba propostas</h2>
+                            <p className="text-sm font-light md:text-lg">Seu imóvel ficará visível para interessados, e você receberá mensagens e propostas diretamente pelo app.</p>
+                        </div>
                     </div>
-                    <div className="flex flex-col items-center w-[500px] gap-5" ref={conteudo2ref}>
-                        <h2 className="font-semibold text-2xl">Receba propostas</h2>
-                        <p className="text-m font-light">Seu imóvel ficará visível para interessados, e você receberá mensagens e propostas diretamente pelo app.</p>
-                    </div>
-                </div>
-                <div className="flex items-center justify-center gap-20">
-                    <div className="flex flex-col items-center w-[500px] gap-5" ref={conteudo3ref}>
-                        <h2 className="font-semibold text-2xl">Alugue com segurança</h2>
-                        <p className="text-m font-light">Negocie com os inquilinos e feche o contrato com segurança, podendo contar com suporte prioritário no plano Premium.</p>
-                    </div>
-                    <div className="w-[300px] h-[300px]" ref={img3ref}>
-                        <Image src={imgAnuncios} alt="Imagem de anuncios" />
+                    <div className="flex flex-row justify-center items-center gap-4">
+                        <div className="flex flex-col gap-4 md:text-center" ref={conteudo3ref}>
+                            <h2 className="text-sm font-bold md:text-2xl">Alugue com segurança</h2>
+                            <p className="text-sm font-light md:text-lg">Negocie com os inquilinos e feche o contrato com segurança, podendo contar com suporte prioritário no plano Premium.</p>
+                        </div>
+                        <div className="" ref={img3ref}>
+                            <Image src={imgAnuncios} alt="Imagem de anuncios" />    
+                        </div>
                     </div>
                 </div>
             </Container>
